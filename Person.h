@@ -4,14 +4,15 @@
 using namespace std;
 
 class Person {
-		string name[10];
+		char name[11];
 		long ID;
 		int Age;
 
 	public:
-		Person(string n = "bobbyboten", long id = 11235813, int age = 120);
+		Person();
+		Person(char* n, long id, int age);
 		void Print();
-		string* getname() { return name; };
+		char* getname() { return name; };
 		long getid() { return ID; };
 		int getage() { return Age; };
 
