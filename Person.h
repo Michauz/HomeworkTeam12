@@ -11,10 +11,10 @@ class Person {
 	public:
 		Person();
 		Person(char* n, long id, int age);
-		void Print();
+		virtual void Print()const;
 		char* getname() { return name; };
-		long getid() { return ID; };
-		int getage() { return Age; };
+		long getid()const { return ID; };
+		int getage()const { return Age; };
 
 };
 

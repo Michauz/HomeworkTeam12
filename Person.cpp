@@ -14,7 +14,7 @@ Person::Person(char* n,long id,int age) {		//ctor
 
 }
 
-void Person::Print() {
+void Person::Print()const {
 	int i = 0;
 	while (this->name[i] != '\0')
 		cout << this->name[i];
