@@ -8,6 +8,6 @@ public:
 	Employee() :Person() { salary = 0; };
 	Employee(float salary, char* n, long id, int age) :Person(n, id, age) { this->salary = salary; };
 	void virtual Print()const;
-	int getavg()const;
+	int getsalary()const { return salary; };
 	};
 #endif 
