@@ -5,9 +5,9 @@
 class Employee :public Person {
 	float salary;
 public:
-	Employee() :Person() { salary = 0; };
-	Employee(float salary, char* n, long id, int age) :Person(n, id, age) { this->salary = salary; };
+	inline Employee() :Person() { salary = 0; };
+	inline Employee(float salary, char* n, long id, int age) :Person(n, id, age) { this->salary = salary; };
 	void virtual Print()const;
-	int getsalary()const { return salary; };
+	inline int getsalary()const { return salary; };
 	};
 #endif 
