@@ -1,8 +1,7 @@
-#ifndef _Employee_h
-#define _Employee_h
+#pragma once
 #include "Person.h"
 
-class Employee :public Person {
+class Employee :virtual public Person {
 	float salary;
 public:
 	inline Employee() :Person() { salary = 0; };
@@ -10,4 +9,3 @@ public:
 	void virtual Print()const;
 	inline int getsalary()const { return salary; };
 	};
-#endif 
