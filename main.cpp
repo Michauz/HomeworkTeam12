@@ -11,10 +11,23 @@
 #include "Person.h"
 #include "Student.h"
 #include "WorkingStudent.h"
+//Including all relevant types we created
 using namespace std;
 int main() {
-	
+	int size = SizeInput(); //ask user for size of array
+
+
+
 
 	system("pause");
 	return 0;
 }
+
+int SizeInput()
+{
+	int size;
+	cout << "Please enter the amount of people: ";
+	cin >> size; // asking for the size of the array
+	return size;
+}
+
